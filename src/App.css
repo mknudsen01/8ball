@@ -1,22 +1,61 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  height: 100vh;
+}
+
+.ball__outer {
+  background-color: #222;
+  height: 600px;
+  width: 600px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.ball__inner {
+  background-color: #000;
+
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.ball__triangle {
+  background: #040bbf;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.ball__content {
+  color: #82d6ff;
+  font-size: 11px;
+}
+
+.button {
+  background: #040bbf;
+  color: #82d6ff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: 0.3s all ease;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: #030be0;
 }
